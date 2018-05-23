@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CitySearch</string>
+    <string name="tab_text_1">Erkunden</string>
+    <string name="tab_text_2">Favoriten</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="button_1">zu Favoriten Hinzufügen</string>
+    <string name="button_2">TESTBTN 2</string>
+    <string name="tab_text_view_1">Nach Schlüsselwörter suchen</string>
+    <string name="tab_text_view_2">Nach Kategorie suchen</string>
+</resources>
