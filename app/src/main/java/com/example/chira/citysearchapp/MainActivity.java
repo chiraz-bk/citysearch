@@ -5,6 +5,8 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         private SectionsPageAdapter mSectionsPageAdapter;
 
         private ViewPager mViewPager;
+
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -30,14 +33,14 @@ public class MainActivity extends AppCompatActivity {
 
             TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
             tabLayout.setupWithViewPager(mViewPager);
+
         }
 
         private void setupViewPager(ViewPager viewPager) {
             SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
-            adapter.addFragment(new fragment(), "TAB1");
-            adapter.addFragment(new fragment2(), "TAB2");
+            adapter.addFragment(new fragment(), "Erkunden");
+            adapter.addFragment(new fragment2(), "Favoriten");
             viewPager.setAdapter(adapter);
         }
-
 
     }
