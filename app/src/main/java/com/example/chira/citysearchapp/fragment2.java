@@ -43,7 +43,7 @@ public class fragment2 extends Fragment {
 // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
         simpleList = (ListView)view.findViewById(R.id.simpleListView);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this.getContext(), R.layout.activity_listview, R.id.textView, countryList);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this.getContext(),R.layout.activity_listview, R.id.textView, countryList);
         simpleList.setAdapter(arrayAdapter);
 
       return view;
